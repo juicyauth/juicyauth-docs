@@ -8,11 +8,12 @@ Lockless is an authentication service that allows users to sign in without the n
 
 ## How It Works
 
-Lockless operates in two main parts: **Client** (frontend) and **Backend**.
+Lockless operates in two main parts: **Client** and **Backend**.
 
-### 1. Client (Frontend)
+### 1. Client
 
 On the client side, users enter their email address to receive a one-time password (OTP). The process looks like this:
+
 - The user enters their email and clicks "Send OTP".
 - Lockless sends an OTP to the user's email.
 - The user inputs the OTP to complete the authentication process.
