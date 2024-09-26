@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../send-otp/">
       
-        <link rel="next" href="roadmap/">
+      
+        <link rel="next" href="../public-key/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
     
     
       
-        <title>LockLess Docs</title>
+        <title>Verify OTP - LockLess Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lockless-otp-email-authentication" class="md-skip">
+        <a href="#verify-otp" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +84,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="LockLess Docs" class="md-header__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="../.." title="LockLess Docs" class="md-header__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Verify OTP
             
           </span>
         </div>
@@ -169,11 +171,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -190,7 +190,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="roadmap/" class="md-tabs__link">
+      <a href="../../roadmap/" class="md-tabs__link">
         
   
     
@@ -205,11 +205,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="api/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   API
@@ -227,7 +229,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="tutorial/python-backend/" class="md-tabs__link">
+        <a href="../../tutorial/python-backend/" class="md-tabs__link">
           
   
   Tutorial
@@ -260,7 +262,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="LockLess Docs" class="md-nav__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="../.." title="LockLess Docs" class="md-nav__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -273,6 +275,133 @@
     
       
       
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../send-otp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Send OTP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
     
@@ -291,18 +420,18 @@
           
   
   <span class="md-ellipsis">
-    Home
+    Verify OTP
   </span>
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Home
+    Verify OTP
   </span>
   
 
@@ -324,51 +453,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-lockless" class="md-nav__link">
+  <a href="#request-body" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Lockless?
+      Request Body
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
+  <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
-      How It Works
+      Response
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="How It Works">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-client-frontend" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Client (Frontend)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-backend" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Backend
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#example-request" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      Example Request
     </span>
   </a>
   
@@ -381,86 +486,6 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="roadmap/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Roadmap
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    API
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            API
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="api/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -470,49 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/send-otp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Send OTP
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="api/verify-otp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Verify OTP
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="api/public-key/" class="md-nav__link">
+      <a href="../public-key/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorial/python-backend/" class="md-nav__link">
+      <a href="../../tutorial/python-backend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorial/react-frontend/" class="md-nav__link">
+      <a href="../../tutorial/react-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -649,51 +632,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-lockless" class="md-nav__link">
+  <a href="#request-body" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Lockless?
+      Request Body
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
+  <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
-      How It Works
+      Response
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="How It Works">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-client-frontend" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Client (Frontend)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-backend" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Backend
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#example-request" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      Example Request
     </span>
   </a>
   
@@ -714,31 +673,36 @@
                   
 
 
-<h1 id="lockless-otp-email-authentication">Lockless - OTP Email Authentication</h1>
-<p>Welcome to Lockless, your solution for simple and secure OTP-based email authentication. This documentation will guide you through integrating Lockless into both your frontend and backend systems.</p>
-<h2 id="what-is-lockless">What is Lockless?</h2>
-<p>Lockless is an authentication service that allows users to sign in without the need for passwords. Instead, users receive a One-Time Password (OTP) via email, making the authentication process both secure and user-friendly. Our service is ideal for developers looking for a seamless way to authenticate users in their applications.</p>
-<h2 id="how-it-works">How It Works</h2>
-<p>Lockless operates in two main parts: <strong>Client</strong> (frontend) and <strong>Backend</strong>.</p>
-<h3 id="1-client-frontend">1. Client (Frontend)</h3>
-<p>On the client side, users enter their email address to receive a one-time password (OTP). The process looks like this:
-- The user enters their email and clicks "Send OTP".
-- Lockless sends an OTP to the user's email.
-- The user inputs the OTP to complete the authentication process.</p>
-<h3 id="2-backend">2. Backend</h3>
-<p>On the backend side, developers only need to verify the JWT (JSON Web Token) received from the frontend. The process typically involves:</p>
+<h1 id="verify-otp">Verify OTP</h1>
+<p><strong>Endpoint:</strong><br />
+<code>POST https://api.lockless.dev/auth/verify-otp/</code></p>
+<p>This endpoint is used by the <strong>backend</strong> to verify the one-time password (OTP) sent to the user's email.</p>
+<h2 id="request-body">Request Body</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;otp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123456&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;app_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your_app_id&quot;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</code></pre></div>
 <ul>
-<li>The frontend sends the verified JWT to the backend.</li>
-<li>The backend verifies the JWT using the public key provided by Lockless through the /auth/public-key/ endpoint.</li>
+<li><code>email</code>: The user's email address.</li>
+<li><code>otp</code>: The OTP received by the user via email.</li>
+<li><code>app_id</code>: The application’s unique identifier.</li>
 </ul>
-<p>This setup allows developers to integrate secure authentication into their web, mobile, or CLI applications with minimal effort, focusing solely on JWT verification in the backend.</p>
-<h2 id="key-features">Key Features</h2>
+<h2 id="response">Response</h2>
 <ul>
-<li><strong>No Passwords</strong>: Users authenticate through email OTP, eliminating the need for traditional passwords.</li>
-<li><strong>Easy Integration</strong>: Minimal code required to connect Lockless to your frontend and backend.</li>
-<li><strong>Secure</strong>: Uses RS256 algorithm for JWT verification to ensure high-level security.</li>
-<li><strong>Flexible</strong>: Works with any platform, including web and mobile apps, without needing embedded webviews.</li>
+<li><code>200 OK</code>: OTP successfully verified.</li>
+<li><code>422 Unprocessable Entity</code>: Invalid OTP, email, or app ID.</li>
 </ul>
+<h2 id="example-request">Example Request</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://api.lockless.com/auth/verify-otp/&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="s1">  &quot;email&quot;: &quot;user@example.com&quot;,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="s1">  &quot;otp&quot;: &quot;123456&quot;,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="s1">  &quot;app_id&quot;: &quot;your_app_id&quot;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="s1">}&#39;</span>
+</code></pre></div>
 
 
 
@@ -785,10 +749,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
       
     
   </body>
