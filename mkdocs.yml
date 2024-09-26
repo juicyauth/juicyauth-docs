@@ -1,1 +1,25 @@
-site_name: My Docs
+site_name: LockLess Docs
+nav:
+  - Home: index.md
+  - Roadmap: roadmap.md
+  - API:
+    - Overview: api/index.md
+    - Send OTP: api/send-otp.md
+    - Verify OTP: api/verify-otp.md
+    - Public Key: api/public-key.md
+  - Tutorial:
+    - Python Backend: tutorial/python-backend.md
+    - React Frontend: tutorial/react-frontend.md
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: green
+    accent: light green
+  features:
+      - navigation.tabs
+      - navigation.sections
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
