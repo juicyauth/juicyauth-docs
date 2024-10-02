@@ -21,6 +21,9 @@ This endpoint is used by the **backend** to verify the one-time password (OTP) s
 
 ## Response
 - `200 OK`: OTP successfully verified.
+```json
+{"jwt": ""}
+```
 - `422 Unprocessable Entity`: Invalid OTP, email, or app ID.
 
 ## Example Request
