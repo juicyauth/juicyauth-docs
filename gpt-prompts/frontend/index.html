@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../frontend/">
+        <link rel="prev" href="../../tutorial/react-frontend/">
       
+      
+        <link rel="next" href="../backend/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>Backend - LockLess Docs</title>
+        <title>Frontend - LockLess Docs</title>
       
     
     
@@ -68,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jwt-verification-backend-prompt" class="md-skip">
+        <a href="#otp-authentication-prompt" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Backend
+              Frontend
             
           </span>
         </div>
@@ -245,10 +247,10 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../frontend/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
-  GPT Help
+  GPT Prompts
 
         </a>
       </li>
@@ -580,7 +582,7 @@
             
   
   <span class="md-ellipsis">
-    GPT Help
+    GPT Prompts
   </span>
   
 
@@ -590,30 +592,9 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            GPT Help
+            GPT Prompts
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../frontend/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Frontend
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -633,7 +614,7 @@
           
   
   <span class="md-ellipsis">
-    Backend
+    Frontend
   </span>
   
 
@@ -644,7 +625,7 @@
         
   
   <span class="md-ellipsis">
-    Backend
+    Frontend
   </span>
   
 
@@ -664,9 +645,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#jwt-verification-backend-prompt" class="md-nav__link">
+  <a href="#otp-authentication-prompt" class="md-nav__link">
     <span class="md-ellipsis">
-      JWT Verification Backend Prompt
+      OTP Authentication Prompt
     </span>
   </a>
   
@@ -676,6 +657,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backend
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -713,9 +715,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#jwt-verification-backend-prompt" class="md-nav__link">
+  <a href="#otp-authentication-prompt" class="md-nav__link">
     <span class="md-ellipsis">
-      JWT Verification Backend Prompt
+      OTP Authentication Prompt
     </span>
   </a>
   
@@ -736,18 +738,18 @@
                   
 
 
-  <h1>Backend</h1>
+  <h1>Frontend</h1>
 
-<h3 id="jwt-verification-backend-prompt">JWT Verification Backend Prompt</h3>
-<p>You can use this prompt in ChatGPT or Gemini to get help with implementing JWT handling in your backend.</p>
+<h3 id="otp-authentication-prompt">OTP Authentication Prompt</h3>
+<p>You can use this prompt in ChatGPT or Gemini to get help with implementing OTP login on your website or mobile app (client-side). </p>
 <hr />
 <p><strong>Prompt:</strong></p>
-<p>I need help implementing JWT verification in my backend using this API endpoint:<br />
-<code>GET https://api.lockless.dev/auth/public-key/</code> to retrieve the public key used to verify JWTs issued by the Lockless service. The tokens are encoded using the RS256 algorithm.</p>
-<p>Can you provide an implementation example in [your chosen backend technology]?</p>
-<p>Also, please give me an example of a public route and a protected route that requires a valid token for access.</p>
+<p>I need help implementing OTP authentication in my project using these two API endpoints:<br />
+1. <code>POST https://api.lockless.dev/auth/send-otp/</code> to send an OTP to the user's email (<code>email</code>, <code>app_id</code> required).<br />
+2. <code>POST https://api.lockless.dev/auth/verify-otp/</code> to verify the OTP (<code>email</code>, <code>otp</code>, <code>app_id</code> required). On success, the response returns a JWT in the format: <code>{"jwt": "your_jwt_token"}</code>.</p>
+<p>Can you provide an implementation example in [your chosen technology]?</p>
 <hr />
-<p><strong>Important:</strong> Remember to replace <code>[your chosen backend technology]</code> with the specific technology you're using (e.g., Node.js, Python/FastAPI).</p>
+<p><strong>Important:</strong> Remember to replace <code>[your chosen technology]</code> with the specific technology you're using (e.g., Flutter, React).</p>
 
 
 
