@@ -10,9 +10,9 @@ nav:
   - Tutorial:
     - Python Backend: tutorial/python-backend.md
     - React Frontend: tutorial/react-frontend.md
-  - GPT Help:
-    - Frontend: gpt-help/frontend.md
-    - Backend: gpt-help/backend.md
+  - GPT Prompts:
+    - Frontend: gpt-prompts/frontend.md
+    - Backend: gpt-prompts/backend.md
 theme:
   name: material
   palette:
