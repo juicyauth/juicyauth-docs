@@ -1,4 +1,4 @@
-site_name: LockLess Docs
+site_name: JuicyAuth Docs
 nav:
   - Home: index.md
   - Roadmap: roadmap.md

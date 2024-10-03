@@ -20,7 +20,7 @@
     
     
       
-        <title>Send OTP - LockLess Docs</title>
+        <title>Send OTP - JuicyAuth Docs</title>
       
     
     
@@ -84,7 +84,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LockLess Docs" class="md-header__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="../.." title="JuicyAuth Docs" class="md-header__button md-logo" aria-label="JuicyAuth Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LockLess Docs
+            JuicyAuth Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -280,13 +280,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LockLess Docs" class="md-nav__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="../.." title="JuicyAuth Docs" class="md-nav__button md-logo" aria-label="JuicyAuth Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    LockLess Docs
+    JuicyAuth Docs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -782,7 +782,7 @@
 
 <h1 id="send-otp">Send OTP</h1>
 <p><strong>Endpoint:</strong><br />
-<code>POST https://api.lockless.dev/auth/send-otp/</code></p>
+<code>POST https://api.juicyauth.dev/auth/send-otp/</code></p>
 <p>This endpoint is used by the <strong>frontend</strong> to send a one-time password (OTP) to the user's email address. The OTP is used for user authentication.</p>
 <h2 id="request-body">Request Body</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
@@ -800,7 +800,7 @@
 <li><code>422 Unprocessable Entity</code>: Invalid input (e.g., missing email or app_id).</li>
 </ul>
 <h2 id="example-request">Example Request</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://api.lockless.com/auth/send-otp/&quot;</span><span class="w"> </span><span class="se">\</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://api.juicyauth.com/auth/send-otp/&quot;</span><span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>-d<span class="w"> </span><span class="s1">&#39;{</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="s1">  &quot;email&quot;: &quot;user@example.com&quot;,</span>

@@ -1,6 +1,6 @@
 # API Overview
 
-Lockless provides a set of secure endpoints for OTP-based authentication. These APIs are designed to integrate seamlessly with your backend services.
+JuicyAuth provides a set of secure endpoints for OTP-based authentication. These APIs are designed to integrate seamlessly with your backend services.
 
 The authentication process involves:
 

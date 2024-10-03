@@ -1,7 +1,7 @@
 # Send OTP
 
 **Endpoint:**  
-`POST https://api.lockless.dev/auth/send-otp/`
+`POST https://api.juicyauth.dev/auth/send-otp/`
 
 This endpoint is used by the **frontend** to send a one-time password (OTP) to the user's email address. The OTP is used for user authentication.
 
@@ -24,7 +24,7 @@ This endpoint is used by the **frontend** to send a one-time password (OTP) to t
 ## Example Request
 
 ```bash
-curl -X POST "https://api.lockless.com/auth/send-otp/" \
+curl -X POST "https://api.juicyauth.com/auth/send-otp/" \
 -H "Content-Type: application/json" \
 -d '{
   "email": "user@example.com",

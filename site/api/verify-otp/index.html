@@ -20,7 +20,7 @@
     
     
       
-        <title>Verify OTP - LockLess Docs</title>
+        <title>Verify OTP - JuicyAuth Docs</title>
       
     
     
@@ -84,7 +84,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LockLess Docs" class="md-header__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="../.." title="JuicyAuth Docs" class="md-header__button md-logo" aria-label="JuicyAuth Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LockLess Docs
+            JuicyAuth Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -280,13 +280,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LockLess Docs" class="md-nav__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="../.." title="JuicyAuth Docs" class="md-nav__button md-logo" aria-label="JuicyAuth Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    LockLess Docs
+    JuicyAuth Docs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -483,6 +483,15 @@
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-codes-for-bad-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Codes for Bad Request
     </span>
   </a>
   
@@ -757,6 +766,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#error-codes-for-bad-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Codes for Bad Request
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example-request" class="md-nav__link">
     <span class="md-ellipsis">
       Example Request
@@ -782,7 +800,7 @@
 
 <h1 id="verify-otp">Verify OTP</h1>
 <p><strong>Endpoint:</strong><br />
-<code>POST https://api.lockless.dev/auth/verify-otp/</code></p>
+<code>POST https://api.juicyauth.dev/auth/verify-otp/</code></p>
 <p>This endpoint is used by the <strong>backend</strong> to verify the one-time password (OTP) sent to the user's email.</p>
 <h2 id="request-body">Request Body</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
@@ -798,19 +816,58 @@
 </ul>
 <h2 id="response">Response</h2>
 <ul>
-<li><code>200 OK</code>: OTP successfully verified.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span><span class="nt">&quot;jwt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">}</span>
-</code></pre></div></li>
-<li><code>422 Unprocessable Entity</code>: Invalid OTP, email, or app ID.</li>
+<li>
+<p><strong>200 OK</strong>: OTP successfully verified.
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  &quot;jwt&quot;: &quot;&quot;
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>}
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>400 Bad Request</strong>: OTP verification failed or the OTP is invalid.
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>{
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  &quot;error_code&quot;: &quot;otp_verified_failed&quot;,
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  &quot;error_description&quot;: &quot;OTP verification failed.&quot;
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>}
+</code></pre></div></p>
+</li>
+<li><strong>422 Unprocessable Entity</strong>: Invalid OTP, email, or app ID.</li>
 </ul>
+<h2 id="error-codes-for-bad-request">Error Codes for Bad Request</h2>
+<table>
+<thead>
+<tr>
+<th>Error Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>otp_verified_failed</code></td>
+<td>The OTP verification has failed.</td>
+</tr>
+<tr>
+<td><code>otp_expired</code></td>
+<td>The OTP has expired.</td>
+</tr>
+<tr>
+<td><code>user_banned</code></td>
+<td>The user has been banned from the app.</td>
+</tr>
+<tr>
+<td><code>otp_sent_failed</code></td>
+<td>Failed to send OTP email.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="example-request">Example Request</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://api.lockless.com/auth/verify-otp/&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="s1">  &quot;email&quot;: &quot;user@example.com&quot;,</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="s1">  &quot;otp&quot;: &quot;123456&quot;,</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="s1">  &quot;app_id&quot;: &quot;your_app_id&quot;</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="s1">}&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://api.juicyauth.com/auth/verify-otp/&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="s1">  &quot;email&quot;: &quot;user@example.com&quot;,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="s1">  &quot;otp&quot;: &quot;123456&quot;,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="s1">  &quot;app_id&quot;: &quot;your_app_id&quot;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="s1">}&#39;</span>
 </code></pre></div>
 
 

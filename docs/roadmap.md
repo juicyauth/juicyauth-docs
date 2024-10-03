@@ -4,7 +4,7 @@ We plan to introduce the ability for developers to customize the content of the 
 
 ## Language Support
 
-Lockless will offer multi-language support for OTP emails. Developers will be able to choose from a list of supported languages, with translations provided and verified by us. This feature aims to improve the user experience for global applications.
+JuicyAuth will offer multi-language support for OTP emails. Developers will be able to choose from a list of supported languages, with translations provided and verified by us. This feature aims to improve the user experience for global applications.
 
 ##  Usage Statistics
 

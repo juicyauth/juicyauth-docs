@@ -20,7 +20,7 @@
     
     
       
-        <title>Python Backend - LockLess Docs</title>
+        <title>Python Backend - JuicyAuth Docs</title>
       
     
     
@@ -84,7 +84,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LockLess Docs" class="md-header__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="../.." title="JuicyAuth Docs" class="md-header__button md-logo" aria-label="JuicyAuth Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LockLess Docs
+            JuicyAuth Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -280,13 +280,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LockLess Docs" class="md-nav__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="../.." title="JuicyAuth Docs" class="md-nav__button md-logo" aria-label="JuicyAuth Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    LockLess Docs
+    JuicyAuth Docs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -799,17 +799,17 @@
 
 
 <h1 id="python-jwt-verification">Python JWT Verification</h1>
-<p>This tutorial will guide you through verifying JSON Web Tokens (JWTs) in Python using Lockless's public key. JWTs are used to securely transmit information between parties as a JSON object.</p>
+<p>This tutorial will guide you through verifying JSON Web Tokens (JWTs) in Python using JuicyAuth's public key. JWTs are used to securely transmit information between parties as a JSON object.</p>
 <h2 id="step-1-install-required-libraries">Step 1: Install Required Libraries</h2>
 <p>First, ensure you have the <code>PyJWT</code> library installed:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>PyJWT<span class="w"> </span>requests
 </code></pre></div>
 <h2 id="step-2-fetch-the-public-key">Step 2: Fetch the Public Key</h2>
-<p>To verify a JWT, you need to fetch the public key from the Lockless API. Here's how you can retrieve it:</p>
+<p>To verify a JWT, you need to fetch the public key from the JuicyAuth API. Here's how you can retrieve it:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">def</span> <span class="nf">get_public_key</span><span class="p">():</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.lockless.com/auth/public-key/&quot;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.juicyauth.com/auth/public-key/&quot;</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>

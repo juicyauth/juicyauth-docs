@@ -18,7 +18,7 @@
     
     
       
-        <title>LockLess Docs</title>
+        <title>JuicyAuth Docs</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lockless-otp-email-authentication" class="md-skip">
+        <a href="#juicyauth-otp-email-authentication" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +82,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="LockLess Docs" class="md-header__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="." title="JuicyAuth Docs" class="md-header__button md-logo" aria-label="JuicyAuth Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +96,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LockLess Docs
+            JuicyAuth Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,13 +278,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="LockLess Docs" class="md-nav__button md-logo" aria-label="LockLess Docs" data-md-component="logo">
+    <a href="." title="JuicyAuth Docs" class="md-nav__button md-logo" aria-label="JuicyAuth Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    LockLess Docs
+    JuicyAuth Docs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -342,9 +342,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-lockless" class="md-nav__link">
+  <a href="#what-is-juicyauth" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Lockless?
+      What is JuicyAuth?
     </span>
   </a>
   
@@ -756,9 +756,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-lockless" class="md-nav__link">
+  <a href="#what-is-juicyauth" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Lockless?
+      What is JuicyAuth?
     </span>
   </a>
   
@@ -821,30 +821,30 @@
                   
 
 
-<h1 id="lockless-otp-email-authentication">Lockless - OTP Email Authentication</h1>
-<p>Welcome to Lockless, your solution for simple and secure OTP-based email authentication. This documentation will guide you through integrating Lockless into both your frontend and backend systems.</p>
-<h2 id="what-is-lockless">What is Lockless?</h2>
-<p>Lockless is an authentication service that allows users to sign in without the need for passwords. Instead, users receive a One-Time Password (OTP) via email, making the authentication process both secure and user-friendly. Our service is ideal for developers looking for a seamless way to authenticate users in their applications.</p>
+<h1 id="juicyauth-otp-email-authentication">JuicyAuth - OTP Email Authentication</h1>
+<p>Welcome to JuicyAuth, your solution for simple and secure OTP-based email authentication. This documentation will guide you through integrating JuicyAuth into both your frontend and backend systems.</p>
+<h2 id="what-is-juicyauth">What is JuicyAuth?</h2>
+<p>JuicyAuth is an authentication service that allows users to sign in without the need for passwords. Instead, users receive a One-Time Password (OTP) via email, making the authentication process both secure and user-friendly. Our service is ideal for developers looking for a seamless way to authenticate users in their applications.</p>
 <h2 id="how-it-works">How It Works</h2>
-<p>Lockless operates in two main parts: <strong>Client</strong> and <strong>Backend</strong>.</p>
+<p>JuicyAuth operates in two main parts: <strong>Client</strong> and <strong>Backend</strong>.</p>
 <h3 id="1-client">1. Client</h3>
 <p>On the client side, users enter their email address to receive a one-time password (OTP). The process looks like this:</p>
 <ul>
 <li>The user enters their email and clicks "Send OTP".</li>
-<li>Lockless sends an OTP to the user's email.</li>
+<li>JuicyAuth sends an OTP to the user's email.</li>
 <li>The user inputs the OTP to complete the authentication process.</li>
 </ul>
 <h3 id="2-backend">2. Backend</h3>
 <p>On the backend side, developers only need to verify the JWT (JSON Web Token) received from the frontend. The process typically involves:</p>
 <ul>
 <li>The frontend sends the verified JWT to the backend.</li>
-<li>The backend verifies the JWT using the public key provided by Lockless through the /auth/public-key/ endpoint.</li>
+<li>The backend verifies the JWT using the public key provided by JuicyAuth through the /auth/public-key/ endpoint.</li>
 </ul>
 <p>This setup allows developers to integrate secure authentication into their web, mobile, or CLI applications with minimal effort, focusing solely on JWT verification in the backend.</p>
 <h2 id="key-features">Key Features</h2>
 <ul>
 <li><strong>No Passwords</strong>: Users authenticate through email OTP, eliminating the need for traditional passwords.</li>
-<li><strong>Easy Integration</strong>: Minimal code required to connect Lockless to your frontend and backend.</li>
+<li><strong>Easy Integration</strong>: Minimal code required to connect JuicyAuth to your frontend and backend.</li>
 <li><strong>Secure</strong>: Uses RS256 algorithm for JWT verification to ensure high-level security.</li>
 <li><strong>Flexible</strong>: Works with any platform, including web and mobile apps, without needing embedded webviews.</li>
 </ul>

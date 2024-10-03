@@ -1,6 +1,6 @@
 # Python JWT Verification
 
-This tutorial will guide you through verifying JSON Web Tokens (JWTs) in Python using Lockless's public key. JWTs are used to securely transmit information between parties as a JSON object.
+This tutorial will guide you through verifying JSON Web Tokens (JWTs) in Python using JuicyAuth's public key. JWTs are used to securely transmit information between parties as a JSON object.
 
 ## Step 1: Install Required Libraries
 
@@ -12,13 +12,13 @@ pip install PyJWT requests
 
 ## Step 2: Fetch the Public Key
 
-To verify a JWT, you need to fetch the public key from the Lockless API. Here's how you can retrieve it:
+To verify a JWT, you need to fetch the public key from the JuicyAuth API. Here's how you can retrieve it:
 
 ```python
 import requests
 
 def get_public_key():
-    url = "https://api.lockless.com/auth/public-key/"
+    url = "https://api.juicyauth.com/auth/public-key/"
     response = requests.get(url)
     return response.text
 

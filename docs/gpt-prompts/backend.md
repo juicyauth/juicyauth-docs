@@ -7,7 +7,7 @@ You can use this prompt in ChatGPT or Gemini to get help with implementing JWT h
 **Prompt:**
 
 I need help implementing JWT verification in my backend using this API endpoint:  
-`GET https://api.lockless.dev/auth/public-key/` to retrieve the public key used to verify JWTs issued by the Lockless service. The tokens are encoded using the RS256 algorithm.
+`GET https://api.juicyauth.dev/auth/public-key/` to retrieve the public key used to verify JWTs issued by the JuicyAuth service. The tokens are encoded using the RS256 algorithm.
 
 Can you provide an implementation example in [your chosen backend technology]?
 
