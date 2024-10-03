@@ -1,7 +1,8 @@
 site_name: JuicyAuth Docs
 nav:
-  - Home: index.md
-  - Roadmap: roadmap.md
+  - Home:
+    - Overview: index.md
+    - Roadmap: roadmap.md
   - API:
     - Overview: api/index.md
     - Send OTP: api/send-otp.md
