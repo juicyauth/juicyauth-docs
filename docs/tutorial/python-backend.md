@@ -18,7 +18,7 @@ To verify a JWT, you need to fetch the public key from the JuicyAuth API. Here's
 import requests
 
 def get_public_key():
-    url = "https://api.juicyauth.com/auth/public-key/"
+    url = "https://api.juicyauth.dev/auth/public-key/"
     response = requests.get(url)
     return response.text
 
