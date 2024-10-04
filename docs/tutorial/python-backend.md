@@ -37,8 +37,8 @@ import jwt
 def verify_jwt(token: str, public_key: str) -> str:
     try:
         payload = jwt.decode(token, public_key, algorithms=["RS256"])
-        user_email = payload.get("sub")  # Extract the user's email
-        return user_email
+        user_id = payload.get("sub")  # Extract the user's id
+        return user_id
     except jwt.ExpiredSignatureError:
         raise ValueError("Token has expired")
     except jwt.InvalidTokenError:
@@ -49,8 +49,8 @@ token = "your_jwt_token"
 public_key = get_public_key()
 
 try:
-    user_email = verify_jwt(token, public_key)
-    print("Token is valid, user email:", user_email)
+    user_id = verify_jwt(token, public_key)
+    print("Token is valid, user id:", user_id)
 except ValueError as e:
     print("Token verification failed:", str(e))
 ```
@@ -75,13 +75,13 @@ def jwt_dependency(authorization: str = Header(...)):
     public_key = get_public_key()
 
     try:
-        user_email = verify_jwt(token, public_key)
-        return user_email
+        user_id = verify_jwt(token, public_key)
+        return user_id
     except ValueError as e:
         raise HTTPException(status_code=401, detail="Invalid or expired token")
 
 @app.get("/protected-route/")
-def protected_route(user_email: str = Depends(jwt_dependency)):
-    return {"message": "Access granted", "user_email": user_email}
+def protected_route(user_id: str = Depends(jwt_dependency)):
+    return {"message": "Access granted", "user_id": user_id}
 ```
 
